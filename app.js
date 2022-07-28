@@ -25,10 +25,10 @@ price.addEventListener("change", () => {
     taxableAmount.value = price.value - 325000;
     taxDue.value = taxableAmount.value * 0.1 + 2100 + 3750;
   }
-  // Check purchase price between £145,001 and £250,000
+  // Check purchase price is over £750,000
   if (price.value >= 750001) {
     taxableAmount.value = price.value - 750000;
-    taxDue.value = taxableAmount.value * 0.12;
+    taxDue.value = taxableAmount.value * 0.12 + 2100 + 3750 + 42500;
   }
   console.log(price.value);
   //   taxableAmount.value = "";
