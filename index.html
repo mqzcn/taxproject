@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Basics</title>
+    <title>Tax Calc Project</title>
   </head>
+
   <body>
-    <h1>Getting Started with Github commands</h1>
+    <h1>LBTT Calculator</h1>
+
+    <div class="form">
+      <input id="input" type="number" placeholder="Purchase Price"></input>
+      <input
+        disabled
+        id="taxable-amount-output"
+        type="number"
+        placeholder="Taxable Amount"
+      />
+      <input disabled id="tax-due-output" type="number" placeholder="Tax Due" />
+    </div>
+
+    <script src="app.js" async></script>
   </body>
 </html>
