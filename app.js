@@ -4,6 +4,7 @@ const taxableAmount = document.getElementById("taxable-amount-output");
 const taxDue = document.getElementById("tax-due-output");
 
 // Add an event listenter to handle change of the input field and run a function
+// If comparisons can better be implemented using Switch Case
 price.addEventListener("change", () => {
   // Check purchase price is less than or equal to £145,000
   if (price.value <= 145000) {
@@ -31,6 +32,6 @@ price.addEventListener("change", () => {
     taxDue.value = taxableAmount.value * 0.12 + 2100 + 3750 + 42500;
   }
   console.log(price.value);
-  //   taxableAmount.value = "";
+  //   taxableAmount.textContent = "test";
   //   taxDue.value = "";
 });
