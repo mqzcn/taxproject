@@ -1,0 +1,22 @@
+{
+  "name": "taxproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/mqzcn/taxproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mqzcn/taxproject/issues"
+  },
+  "homepage": "https://github.com/mqzcn/taxproject#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
