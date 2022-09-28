@@ -1,5 +1,4 @@
-const config = {
-  verbose: true,
+export default {
+  testEnvironment: "jsdom",
+  transform: {},
 };
-
-module.exports = config;
