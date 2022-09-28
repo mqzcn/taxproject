@@ -10,21 +10,68 @@
   <body>
     <h1>LBTT Calculator</h1>
 
+
+
     <div class="form">
-      <input id="input" type="number" placeholder="Purchase Price"></input>
+      <label>Purchase Price</label>
+      <input id="input" type="text" placeholder="Purchase Price" required></input>
+      <label>Taxable Amount</label>
       <input
-        disabled 
-        id="taxable-amount-output" 
-        type="number" 
-        placeholder="Taxable Amount"
+      disabled
+      id="taxable-amount-output" 
+      type="text" 
+      placeholder="Taxable Amount"
       />
+      <label>Tax Due</label>
       <input
         disabled
         id="tax-due-output" 
-        type="number" 
+        type="text" 
         placeholder="Tax Due" />
+        <br><br/>
+        <button disabled id="calc-button" style="font-size: large;">Calculate</button>
     </div>
 
-    <script src="app.js" async></script>
+    <br>
+    <label style="font-size: 20px">Breakdown:</label>
+    <h></h>
+    <table border='2' style='border-collapse:collapse' cellpadding="10" cellspacing="5">
+      <tr>
+        <th>Tax Bracket</th>
+        <th>Tax Percentage</th>
+        <th>Taxable Amount (£)</th>
+        <th>Tax Due (£)</th>
+      </tr>
+      
+      <tr>
+        <td id="bracket-1-range">£145,000-£250,000</td>
+        <td id="bracket-1-percent">2%</td>
+        <td id="bracket-1-taxable-amount"></td>
+        <td id="bracket-1-tax-due"></td>
+      </tr>
+
+      <tr>
+        <td id="bracket-2-range">£250,001-£325,000</td>
+        <td id="bracket-2-percent">5%</td>
+        <td id="bracket-2-taxable-amount"></td>
+        <td id="bracket-2-tax-due"></td>
+      </tr>
+      <tr>
+        <td id="bracket-3-range">£325,001-£750,000</td>
+        <td id="bracket-3-percent">10%</td>
+        <td id="bracket-3-taxable-amount"></td>
+        <td id="bracket-3-tax-due"></td>
+      </tr>
+      <tr>
+        <td id="bracket-4-range">£750,001+</td>
+        <td id="bracket-4-percent">12%</td>
+        <td id="bracket-4-taxable-amount"></td>
+        <td id="bracket-4-tax-due"></td>
+      </tr>
+      
+      
+    </table>
+    
+    <script type="module" src="app.js"></script>
   </body>
 </html>

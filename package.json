@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/mqzcn/taxproject#readme",
   "devDependencies": {
-    "jest": "^28.1.3"
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "jest-environment-node": "^28.1.3"
   }
 }
